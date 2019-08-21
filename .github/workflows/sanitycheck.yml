@@ -1,0 +1,9 @@
+name: Sanitycheck
+on: [pull_request]
+
+jobs:
+  sanitycheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get docker image
+        uses: docker://zephyrprojectrtos/zephyr-build:latest
